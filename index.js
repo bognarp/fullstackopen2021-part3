@@ -22,6 +22,7 @@ const logger = morgan(function (tokens, req, res) {
 })
 
 app.use(cors())
+app.use(express.static('build'))
 app.use(express.json())
 app.use(logger)
 
